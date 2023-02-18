@@ -101,32 +101,37 @@ public class HlavniProgram {
 
     public void Barak() {
         Turtle zofka = new Turtle();
-
+        zofka.setPenColor(black);
         zofka.penUp();
         zofka.turnLeft(90);
-        zofka.move(300);
+        zofka.move(250);
         zofka.turnRight(90);
-        zofka.move(125);
+        zofka.move(90);
         zofka.penDown();
-        zofka.setPenColor(black);
-        zofka.penDown();
+        zofka.turnRight(180);
+
 
         //barak
-        zofka.turnRight(180);
-        zofka.move(150);
-        zofka.turnRight(90);
-        zofka.move(90);
-        zofka.turnRight(90);
-        zofka.move(150);
-        zofka.turnRight(90);
-        zofka.move(90);
-        zofka.turnLeft(135);
-        zofka.move(65);
-        zofka.turnLeft(90);
-        zofka.move(65);
 
+        for (int i = 0; i < 5; i++) {
+            zofka.move(130);
+            zofka.turnRight(90);
+            zofka.move(90);
+            zofka.turnRight(90);
+            zofka.move(130);
+            zofka.turnRight(90);
+            zofka.move(90);
+            zofka.turnLeft(135);
+            zofka.move(65);
+            zofka.turnLeft(90);
+            zofka.move(65);
+            zofka.turnRight(225);
+            zofka.penUp();
+            zofka.move(340);
+            zofka.turnRight(90);
+            zofka.penDown();
 
-
+        }
 
     }
 
