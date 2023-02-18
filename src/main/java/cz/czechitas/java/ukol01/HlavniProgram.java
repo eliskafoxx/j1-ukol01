@@ -135,13 +135,46 @@ public class HlavniProgram {
         zofka.turnLeft(90);
         zofka.move(90);
 
+    }
+
+    private static void PismenoS() {
+        Turtle zofka = new Turtle();
+        zofka.setPenColor(green);
+        zofka.setLocation(700, 600);
+
+        zofka.turnRight(90);
+        zofka.penUp();
+        for (int j = 0; j < 9; j++) {
+            zofka.move(8);zofka.turnLeft(10);
+        }
+        zofka.penDown();
+            for (int s = 0; s < 27; s++) {
+                zofka.move(8);zofka.turnLeft(10);
+            }
+            for (int v = 0; v < 27; v++) {
+                zofka.move(8);zofka.turnRight(10);
+            }
+            zofka.penUp();
+                for (int i = 0; i < 9; i++)
+                {zofka.move(8);zofka.turnRight(10);
+                }
+                zofka.turnLeft(90);
+                zofka.penDown();
+                zofka.setLocation(700,475);
+                zofka.turnRight(45);
+                zofka.move(50);
+                zofka.turnLeft(180);
+                zofka.move(50);
+                zofka.turnRight(90);
+                zofka.move(50);
+                zofka.turnRight(180);
+                zofka.move(50);
+                zofka.turnLeft(135);
 
 
     }
-
-
     public static void main(String[] args) {
-        new HlavniProgram().PismenoE();
+        new HlavniProgram().PismenoS();
     }
 }
 
