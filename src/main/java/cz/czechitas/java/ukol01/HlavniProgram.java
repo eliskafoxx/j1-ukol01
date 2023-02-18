@@ -7,6 +7,10 @@ import static java.awt.Color.*;
 public class HlavniProgram {
 
     public void start() {
+        this.Barak();
+        this.Slunce();
+        this.NakresliPrasatko();
+
     }
 
 
@@ -174,7 +178,7 @@ public class HlavniProgram {
 
     }
     public static void main(String[] args) {
-        new HlavniProgram().PismenoS();
+        new HlavniProgram().start();
     }
 }
 
