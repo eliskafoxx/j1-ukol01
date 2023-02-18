@@ -50,9 +50,39 @@ public class HlavniProgram {
         zofka.move(150);
 
     }
+    public void Stopka() {
+        Turtle zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(400);
+        zofka.penDown();
+        zofka.setPenColor(red);
+
+        for (int i = 0; i < 8; i++) {
+            zofka.turnRight(45);
+            zofka.move(45);
+        }
+    }
+
+        public void Kruh() {
+            Turtle zofka = new Turtle();
+            zofka.penUp();
+            zofka.move(200);
+            zofka.turnLeft(90);
+            zofka.move(100);
+            zofka.penDown();
+
+            for (int i = 0; i < 72; i++) {
+                zofka.move(3);
+                zofka.turnRight(5);
+            }
+        }
 
     public static void main(String[] args) {
-        new HlavniProgram().NakresliPrasatko();
+        new HlavniProgram().Kruh();
     }
+
+
+
 
 }
