@@ -9,13 +9,34 @@ public class HlavniProgram {
     public void start() {
     }
 
-        private static void NakresliPrasatko (Turtle zofka) {
+
+    private static void Barak() {
+        Turtle zofka = new Turtle();
+        zofka.setPenColor(black);
+        zofka.setLocation(100,450);
+
+        zofka.turnRight(180);
+        zofka.move(150);
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnLeft(90);
+        zofka.move(150);
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnRight(135);
+        zofka.move(65);
+        zofka.turnRight(90);
+        zofka.move(65);
+
+
+        //for (int i = 0; i < 5; i++) {}
+
+    }
+    private static void NakresliPrasatko () {
+            Turtle zofka = new Turtle();
             zofka.setPenColor(pink);
-            zofka.penUp();
-            zofka.turnLeft(90);
-            zofka.move(75);
-            zofka.turnRight(90);
-            zofka.penDown();
+            zofka.setLocation(600, 500);
+
             //nozka
             zofka.turnRight(210);
             zofka.move(30);
@@ -54,13 +75,9 @@ public class HlavniProgram {
 
 
 
-
     private static void Stopka() {
         Turtle zofka = new Turtle();
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(400);
-        zofka.penDown();
+        zofka.setLocation(250, 250);
         zofka.setPenColor(red);
 
         for (int i = 0; i < 8; i++) {
@@ -71,11 +88,7 @@ public class HlavniProgram {
 
     private static void Kruh() {
         Turtle zofka = new Turtle();
-        zofka.penUp();
-        zofka.move(200);
-        zofka.turnLeft(90);
-        zofka.move(100);
-        zofka.penDown();
+       zofka.setLocation(700,350);
 
         for (int i = 0; i < 72; i++) {
             zofka.move(3);
@@ -85,13 +98,8 @@ public class HlavniProgram {
 
     private static void Slunce() {
         Turtle zofka = new Turtle();
-
-        zofka.penUp();
-        zofka.move(100);
-        zofka.turnLeft(90);
-        zofka.move(300);
-        zofka.penDown();
         zofka.setPenColor(orange);
+        zofka.setLocation(100, 150);
 
 
         for (int i = 0; i < 12; i++) {
@@ -109,44 +117,9 @@ public class HlavniProgram {
 
     }
 
-    private static void Barak() {
-        Turtle zofka = new Turtle();
-        zofka.setPenColor(black);
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(250);
-        zofka.turnRight(90);
-        zofka.move(90);
-        zofka.penDown();
-        zofka.turnRight(180);
-
-
-        //barak
-
-        for (int i = 0; i < 5; i++) {
-            zofka.move(130);
-            zofka.turnRight(90);
-            zofka.move(90);
-            zofka.turnRight(90);
-            zofka.move(130);
-            zofka.turnRight(90);
-            zofka.move(90);
-            zofka.turnLeft(135);
-            zofka.move(65);
-            zofka.turnLeft(90);
-            zofka.move(65);
-            zofka.turnRight(225);
-            zofka.penUp();
-            zofka.move(340);
-            zofka.turnRight(90);
-            zofka.penDown();
-
-        }
-
-    }
 
     public static void main(String[] args) {
-        new HlavniProgram().Slunce();
+        new HlavniProgram().NakresliPrasatko();
     }
 }
 
