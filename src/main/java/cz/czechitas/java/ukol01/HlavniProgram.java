@@ -117,9 +117,31 @@ public class HlavniProgram {
 
     }
 
+    private static void PismenoE() {
+        Turtle zofka = new Turtle();
+        zofka.setPenColor(green);
+        zofka.setLocation(200, 600);
+
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnLeft(90);
+        zofka.move(60);
+        zofka.turnLeft(180);
+        zofka.move(60);
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnLeft(90);
+        zofka.move(90);
+
+
+
+    }
+
 
     public static void main(String[] args) {
-        new HlavniProgram().NakresliPrasatko();
+        new HlavniProgram().PismenoE();
     }
 }
 
