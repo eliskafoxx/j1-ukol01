@@ -51,19 +51,19 @@ public class HlavniProgram {
         this.PismenoE(zofka);
 
 
-        zofka.setLocation(250, 850);
+        zofka.setLocation(320, 850);
         this.PismenoL(zofka);
 
-        zofka.setLocation(400, 850);
+        zofka.setLocation(540, 850);
         this.PismenoI(zofka);
 
-        zofka.setLocation(550, 760);
+        zofka.setLocation(760, 760);
         this.PismenoS(zofka);
 
-        zofka.setLocation(700, 850);
+        zofka.setLocation(980, 850);
         this.PismenoK(zofka);
 
-        zofka.setLocation(850, 850);
+        zofka.setLocation(1200, 850);
         this.PismenoA(zofka);
 
     }
@@ -118,10 +118,17 @@ public class HlavniProgram {
             zofka.move(30);
             zofka.turnRight(180);
             zofka.move(30);
-
             zofka.turnRight(30);
             zofka.move(90);
-            zofka.turnLeft(90);
+
+            //ocas
+            zofka.turnRight(45);
+            zofka.move(50);
+            zofka.turnRight(180);
+            zofka.move(50);
+
+            //hrbet
+            zofka.turnRight(45);
             zofka.move(150);
             zofka.turnRight(90);
         }
@@ -177,6 +184,12 @@ public class HlavniProgram {
         zofka.move(90);
         zofka.turnRight(90);
         zofka.move(90);
+        zofka.turnRight(180);
+        zofka.move(90);
+        zofka.turnLeft(90);
+        zofka.move(180);
+        zofka.turnLeft(90);
+        zofka.move(90);
         zofka.turnLeft(90);
 
     }
@@ -218,7 +231,7 @@ public class HlavniProgram {
                 }
                 zofka.turnLeft(90);
                 zofka.penDown();
-                zofka.setLocation(550,650);
+                zofka.setLocation(770,650);
                 zofka.turnRight(45);
                 zofka.move(50);
                 zofka.turnLeft(180);
@@ -253,6 +266,11 @@ public class HlavniProgram {
         zofka.move(70);
         zofka.turnLeft(70);
         zofka.move(75);
+        zofka.turnLeft(180);
+        zofka.move(75);
+        zofka.turnRight(70);
+        zofka.move(70);
+        zofka.turnLeft(160);
     }
     public static void main(String[] args) {
         new HlavniProgram().start();
