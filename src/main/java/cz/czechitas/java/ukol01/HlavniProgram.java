@@ -5,17 +5,19 @@ import cz.czechitas.java.ukol01.engine.*;
 import static java.awt.Color.*;
 
 public class HlavniProgram {
-
+    private Turtle zofka;
     public void start() {
-        this.Barak();
-        this.Slunce();
+        zofka = new Turtle();
+        this.Barak(zofka);
+        this.Slunce(zofka);
         this.NakresliPrasatko();
+        this.PismenoE();
+        this.PismenoS();
 
     }
 
 
-    private static void Barak() {
-        Turtle zofka = new Turtle();
+    private static void Barak(Turtle zofka) {
         zofka.setPenColor(black);
         zofka.setLocation(100,450);
 
@@ -36,8 +38,7 @@ public class HlavniProgram {
         //for (int i = 0; i < 5; i++) {}
 
     }
-    private static void NakresliPrasatko () {
-            Turtle zofka = new Turtle();
+    private static void NakresliPrasatko (Turtle zofka) {
             zofka.setPenColor(pink);
             zofka.setLocation(600, 500);
 
@@ -79,8 +80,7 @@ public class HlavniProgram {
 
 
 
-    private static void Stopka() {
-        Turtle zofka = new Turtle();
+    private static void Stopka (Turtle zofka) {
         zofka.setLocation(250, 250);
         zofka.setPenColor(red);
 
@@ -90,8 +90,8 @@ public class HlavniProgram {
         }
     }
 
-    private static void Kruh() {
-        Turtle zofka = new Turtle();
+    private static void Kruh(Turtle zofka) {
+        zofka.setPenColor(blue);
        zofka.setLocation(700,350);
 
         for (int i = 0; i < 72; i++) {
@@ -100,16 +100,15 @@ public class HlavniProgram {
         }
     }
 
-    private static void Slunce() {
-        Turtle zofka = new Turtle();
+    private static void Slunce(Turtle zofka) {
         zofka.setPenColor(orange);
-        zofka.setLocation(100, 150);
+        zofka.setLocation(100, 100);
 
 
         for (int i = 0; i < 12; i++) {
 
             for (int y = 0; y < 3; y++) {
-                zofka.move(15);
+                zofka.move(5);
                 zofka.turnRight(10);
             }
             zofka.turnLeft(90);
@@ -121,10 +120,9 @@ public class HlavniProgram {
 
     }
 
-    private static void PismenoE() {
-        Turtle zofka = new Turtle();
+    private static void PismenoE(Turtle zofka) {
         zofka.setPenColor(green);
-        zofka.setLocation(200, 600);
+        zofka.setLocation(200, 700);
 
         zofka.turnLeft(90);
         zofka.move(90);
@@ -141,8 +139,7 @@ public class HlavniProgram {
 
     }
 
-    private static void PismenoS() {
-        Turtle zofka = new Turtle();
+    private static void PismenoS(Turtle zofka) {
         zofka.setPenColor(green);
         zofka.setLocation(700, 600);
 
