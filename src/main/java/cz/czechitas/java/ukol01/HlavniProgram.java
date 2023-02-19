@@ -33,7 +33,7 @@ public class HlavniProgram {
         zofka.setLocation(100,450);
         this.Barak(zofka);
 
-        zofka.setLocation(1215,450);
+        zofka.setLocation(1210,450);
         this.Barak(zofka);
 
         zofka.setLocation(100,200);
@@ -239,15 +239,20 @@ public class HlavniProgram {
         zofka.move(125);
         zofka.turnLeft(180);
         zofka.move(125);
-        zofka.turnLeft(35);
+        zofka.turnLeft(90);
         zofka.move(125);
+        zofka.turnLeft(135);
     }
 
     private static void PismenoA (Turtle zofka) {
-        zofka.turnRight(45);
-        zofka.move(180);
-        zofka.turnRight(45);
-        zofka.move(180);
+        zofka.turnRight(20);
+        zofka.move(185);
+        zofka.turnRight(140);
+        zofka.move(185);
+        zofka.turnLeft(180);
+        zofka.move(70);
+        zofka.turnLeft(70);
+        zofka.move(75);
     }
     public static void main(String[] args) {
         new HlavniProgram().start();
