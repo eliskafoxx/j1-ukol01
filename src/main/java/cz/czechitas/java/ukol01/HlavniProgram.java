@@ -8,18 +8,68 @@ public class HlavniProgram {
     private Turtle zofka;
     public void start() {
         zofka = new Turtle();
-        this.Barak(zofka);
+
+        zofka.setLocation(600, 500);
+        zofka.setPenColor((pink));
+        this.NakresliPrasatko(zofka);
+
+        /*
+        zofka.setLocation(300, 105);
+        zofka.setPenColor(red);
+        this.Stopka(zofka);
+
+
+        zofka.setPenColor(blue);
+        zofka.setLocation(600,100);
+        this.Kruh(zofka);
+        */
+
+        zofka.setPenColor(orange);
+        zofka.setLocation(100, 75);
         this.Slunce(zofka);
-        this.NakresliPrasatko();
-        this.PismenoE();
-        this.PismenoS();
+
+
+        zofka.setPenColor(black);
+        zofka.setLocation(100,450);
+        this.Barak(zofka);
+
+        zofka.setLocation(1215,450);
+        this.Barak(zofka);
+
+        zofka.setLocation(100,200);
+        for (int i = 0; i < 5; i++) {
+            this.Barak(zofka);
+            zofka.penUp();
+            zofka.turnRight(90);
+            zofka.move(185);
+            zofka.turnLeft(90);
+            zofka.penDown();
+        }
+
+        zofka.setPenColor(darkGray);
+        zofka.setLocation(100, 850);
+        this.PismenoE(zofka);
+
+
+        zofka.setLocation(250, 850);
+        this.PismenoL(zofka);
+
+        zofka.setLocation(400, 850);
+        this.PismenoI(zofka);
+
+        zofka.setLocation(550, 760);
+        this.PismenoS(zofka);
+
+        zofka.setLocation(700, 850);
+        this.PismenoK(zofka);
+
+        zofka.setLocation(850, 850);
+        this.PismenoA(zofka);
 
     }
 
 
     private static void Barak(Turtle zofka) {
-        zofka.setPenColor(black);
-        zofka.setLocation(100,450);
 
         zofka.turnRight(180);
         zofka.move(150);
@@ -33,14 +83,11 @@ public class HlavniProgram {
         zofka.move(65);
         zofka.turnRight(90);
         zofka.move(65);
+        zofka.turnLeft(135);
 
-
-        //for (int i = 0; i < 5; i++) {}
 
     }
     private static void NakresliPrasatko (Turtle zofka) {
-            zofka.setPenColor(pink);
-            zofka.setLocation(600, 500);
 
             //nozka
             zofka.turnRight(210);
@@ -76,13 +123,12 @@ public class HlavniProgram {
             zofka.move(90);
             zofka.turnLeft(90);
             zofka.move(150);
+            zofka.turnRight(90);
         }
 
 
 
     private static void Stopka (Turtle zofka) {
-        zofka.setLocation(250, 250);
-        zofka.setPenColor(red);
 
         for (int i = 0; i < 8; i++) {
             zofka.turnRight(45);
@@ -90,9 +136,7 @@ public class HlavniProgram {
         }
     }
 
-    private static void Kruh(Turtle zofka) {
-        zofka.setPenColor(blue);
-       zofka.setLocation(700,350);
+    private static void Kruh (Turtle zofka) {
 
         for (int i = 0; i < 72; i++) {
             zofka.move(3);
@@ -101,9 +145,6 @@ public class HlavniProgram {
     }
 
     private static void Slunce(Turtle zofka) {
-        zofka.setPenColor(orange);
-        zofka.setLocation(100, 100);
-
 
         for (int i = 0; i < 12; i++) {
 
@@ -121,27 +162,43 @@ public class HlavniProgram {
     }
 
     private static void PismenoE(Turtle zofka) {
-        zofka.setPenColor(green);
-        zofka.setLocation(200, 700);
 
-        zofka.turnLeft(90);
+        zofka.turnRight(90);
         zofka.move(90);
-        zofka.turnLeft(90);
+        zofka.turnLeft(180);
         zofka.move(90);
-        zofka.turnLeft(90);
+        zofka.turnRight(90);
+        zofka.move(90);
+        zofka.turnRight(90);
         zofka.move(60);
         zofka.turnLeft(180);
         zofka.move(60);
-        zofka.turnLeft(90);
+        zofka.turnRight(90);
+        zofka.move(90);
+        zofka.turnRight(90);
         zofka.move(90);
         zofka.turnLeft(90);
-        zofka.move(90);
 
     }
 
+    private static void PismenoL(Turtle zofka) {
+        zofka.move(180);
+        zofka.turnRight(180);
+        zofka.move(180);
+        zofka.turnLeft(90);
+        zofka.move(90);
+        zofka.turnLeft(90);
+    }
+
+    private static void PismenoI(Turtle zofka) {
+        zofka.move(180);
+        zofka.turnRight(180);
+        zofka.move(180);
+        zofka.turnRight(180);
+    }
+
+
     private static void PismenoS(Turtle zofka) {
-        zofka.setPenColor(green);
-        zofka.setLocation(700, 600);
 
         zofka.turnRight(90);
         zofka.penUp();
@@ -161,7 +218,7 @@ public class HlavniProgram {
                 }
                 zofka.turnLeft(90);
                 zofka.penDown();
-                zofka.setLocation(700,475);
+                zofka.setLocation(550,650);
                 zofka.turnRight(45);
                 zofka.move(50);
                 zofka.turnLeft(180);
@@ -172,7 +229,25 @@ public class HlavniProgram {
                 zofka.move(50);
                 zofka.turnLeft(135);
 
+    }
 
+    private static void PismenoK(Turtle zofka) {
+        zofka.move(180);
+        zofka.turnRight(180);
+        zofka.move(90);
+        zofka.turnLeft(135);
+        zofka.move(125);
+        zofka.turnLeft(180);
+        zofka.move(125);
+        zofka.turnLeft(35);
+        zofka.move(125);
+    }
+
+    private static void PismenoA (Turtle zofka) {
+        zofka.turnRight(45);
+        zofka.move(180);
+        zofka.turnRight(45);
+        zofka.move(180);
     }
     public static void main(String[] args) {
         new HlavniProgram().start();
